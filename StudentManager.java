@@ -2,6 +2,7 @@
 
 class StudentManager {
     ArrayList<Student> students = new ArrayList<>();
+        // student management system java project
 
     void addStudent(Student s) {
         for(Student st : students) {

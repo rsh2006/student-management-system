@@ -4,6 +4,7 @@
     int age;
     String course;
     double marks;
+        // student management system java project
 
     Student(int rollNo, String name, int age, String course, double marks) {
         this.rollNo = rollNo;
