@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         StudentManager sm = new StudentManager();
+        // student management system java project
 
         while(true) {
             System.out.println("===== MENU =====");
