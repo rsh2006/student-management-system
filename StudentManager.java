@@ -7,12 +7,12 @@ class StudentManager {
     void addStudent(Student s) {
         for(Student st : students) {
             if(st.rollNo == s.rollNo) {
-                System.out.println("❌ Roll number already exists!\n");
+                System.out.println(" Roll number already exists!\n");
                 return;
             }
         }
         students.add(s);
-        System.out.println("✅ Student added successfully!\n");
+        System.out.println("Student added successfully!\n");
     }
 
     void viewStudents() {
@@ -23,7 +23,7 @@ class StudentManager {
 
         System.out.println("\n===== STUDENT LIST =====");
         for(Student s : students) {
-            s.display();   // 👈 clean formatted output
+            s.display(); 
         }
     }
 
@@ -36,15 +36,15 @@ class StudentManager {
 
     void deleteStudent(int rollNo) {
         boolean removed = students.removeIf(s -> s.rollNo == rollNo);
-        if(removed) System.out.println("✅ Deleted successfully!\n");
-        else System.out.println("❌ Student not found!\n");
+        if(removed) System.out.println(" Deleted successfully!\n");
+        else System.out.println(" Student not found!\n");
     }
 
     void updateStudent(int rollNo, Scanner sc) {
         Student s = searchStudent(rollNo);
 
         if(s == null) {
-            System.out.println("❌ Student not found!\n");
+            System.out.println(" Student not found!\n");
             return;
         }
 
@@ -78,10 +78,10 @@ class StudentManager {
                 break;
 
             default:
-                System.out.println("❌ Invalid choice\n");
+                System.out.println(" Invalid choice\n");
                 return;
         }
 
-        System.out.println("✅ Student updated successfully!\n");
+        System.out.println("Student updated successfully!\n");
     }
 }

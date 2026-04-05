@@ -51,7 +51,7 @@ public class Main {
                         System.out.println("\n===== STUDENT FOUND =====");
                         s.display();
                     } else {
-                        System.out.println("❌ Student not found!\n");
+                        System.out.println("1 Student not found!\n");
                     }
                     break;
 
@@ -66,11 +66,11 @@ public class Main {
                     break;
 
                 case 6:
-                    System.out.println("Exiting... 👋");
+                    System.out.println("Exiting");
                     return;
 
                 default:
-                    System.out.println("❌ Invalid choice\n");
+                    System.out.println(" Invalid choice\n");
             }
         }
     }
